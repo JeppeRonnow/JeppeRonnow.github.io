@@ -6,35 +6,72 @@
   <link href="/dist/output.css" rel="stylesheet">
   <script defer src="/src/app.js"></script>
 </head>
-<body class="bg-white dark:bg-neutral-900 text-black dark:text-white font-poppins sans-serif">
-  
-  <nav class="bg-white dark:bg-neutral-800 shadow-lg shadow-neutral-600 dark:shadow-neutral-950 rounded-md mt-5 mx-72">
+<body class="bg-neutral-900 text-white font-poppins sans-serif">
+  <!-- nav v1
+  <nav class="bg-neutral-800 shadow-lg shadow-neutral-950 rounded-md mt-5 mx-72">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex-shrink-0 flex items-center">
-          <a href="/">
-            <img class="h-10 w-auto transition duration-500 ease-in-out dark:hidden" src="\img\GITJR_white.png" alt="Personal Logo">
-            <img class="h-10 w-auto transition duration-500 ease-in-out hidden dark:flex" src="\img\GITJR_dark.png" alt="Personal Logo">
-          </a>
+          
+            <img class="h-10 w-auto transition duration-500 ease-in-out flex" src="\img\GITJR_dark.png" alt="Personal Logo">
+          
         </div>
         <div class="hidden sm:ml-6 sm:flex sm:items-center">
-          <a href="/" class="px-4 py-2 text-lg font-medium text-neutral-900 dark:text-neutral-50 hover:text-orange-600">Home</a>
-          <a href="#About" class="px-4 py-2 text-lg font-medium text-neutral-900 dark:text-neutral-50 hover:text-orange-600">About</a>
-          <a href="#Projects" class="px-4 py-2 text-lg font-medium text-neutral-900 dark:text-neutral-50 hover:text-orange-600">Projects</a>
-          <a href="#Contact" class="px-4 py-2 text-lg font-medium text-neutral-900 dark:text-neutral-50 hover:text-orange-600">Contact</a>
+          <a href="/" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Hjem</a>
+          <a href="#About" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Om mig</a>
+          <a href="#Projects" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Projekter</a>
+          <a href="#Contact" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  -->
+
+  <div class="lg:hidden">
+    <button type="button" class="fixed top-4 right-4 rounded-full bg-neutral-800 shadow-lg shadow-neutral-950 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-neutral-50" viewBox="0 0 24 24" stroke="#ffffff">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <div class="w-44 bg-neutral-800 text-white p-4 absolute rounded-md shadow-lg shadow-neutral-950 mt-5 ml-5">
+      <img class="h-10 mr-0 w-auto transition duration-500 ease-in-out flex" src="\img\GITJR_dark.png" alt="Personal Logo">
+      <ul class="space-y-5 pt-5">
+        <a href="/" class="block text-xl font-medium text-neutral-50 hover:text-orange-600">Hjem</a>
+        <a href="#About" class="block text-xl font-medium text-neutral-50 hover:text-orange-600">Om mig</a>
+        <a href="#Projects" class="block text-xl font-medium text-neutral-50 hover:text-orange-600">Projekter</a>
+        <a href="#Contact" class="block text-xl font-medium text-neutral-50 hover:text-orange-600">Kontakt</a>
+      </ul>
+    </div>
+  </div>
+  
+  <nav class="hidden lg:block bg-neutral-800 shadow-lg shadow-neutral-950 rounded-md mt-5 mx-72">
+    <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <img class="h-10 w-auto transition duration-500 ease-in-out flex" src="\img\GITJR_dark.png" alt="Personal Logo">
+        </div>
+        <div class="hidden sm:ml-6 sm:flex sm:items-center">
+          <a href="/" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Hjem</a>
+          <a href="#About" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Om mig</a>
+          <a href="#Projects" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Projekter</a>
+          <a href="#Contact" class="px-4 py-2 text-lg font-medium text-neutral-50 hover:text-orange-600">Kontakt</a>
         </div>
       </div>
     </div>
   </nav>
   
 
+
+
+
+
   <div id="Home" class="flex flex-row items-center justify-center h-screen js-show-on-scroll">
     <div class="flex flex-col items-center justify-center p-16">
       <h1 class="text-6xl font-bold text-center p-10">Jeppe Rønnow</h1>
-      <p class="text-2xl text-center pb-10">Hi, I'm Jeppe. A noob based in Denmark. 📍</p>
+      <p class="text-2xl text-center pb-10">Mojn, jeg en HTX elev fra Sønderborg 📍</p>
       <a class="" href="https://github.com/JeppeRonnow">
-        <img src="\img\github-mark.png" alt="Github Logo" class="w-16 h-16 mt-4 dark:hidden"/>
-        <img src="\img\github-mark-white.png" alt="Github Logo" class="w-16 h-16 mt-4 hidden dark:flex"/>
+        
+        <img src="\img\github-mark-white.png" alt="Github Logo" class="w-16 h-16 mt-4 flex"/>
       </a>
     </div>
     <div class="flex flex-col items-center justify-center bg-neutral-900 p-10 rounded-3xl shadow-neutral-950 shadow-lg">
@@ -42,22 +79,20 @@
     </div>
   </div>
   
-  <div class="h-auto py-40 bg-neutral-100 dark:bg-neutral-850" id="About">
-    <div class="grid grid-cols-2 p-10 bg-neutral-50 dark:bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl">
+  <div class="h-auto py-40 bg-neutral-850" id="About">
+    <div class="grid grid-cols-2 p-10 bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl space-x-3">
       <div class="flex flex-col items-center h-auto js-show-on-scroll">
         <img src="img/images.jpg" class="h-96 rounded-2xl">
       </div>
       <div class="js-show-on-scroll">
-        <h4 class="text-orange-600 text-2xl font-bold">ABOUT ME</h4>
-        <h2 class="text-3xl font-medium">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        <p class="text-xl font-normal pt-2 text-neutral-600 dark:text-neutral-300">
-          Suspendisse suscipit massa et posuere vulputate. Etiam interdum luctus neque. 
-          Curabitur tellus ex, placerat ullamcorper est vitae, rhoncus pharetra nibh. 
-          Aliquam erat volutpat. Ut pretium orci nisl, et ultrices metus rhoncus a. 
-          Nam eu orci elementum, feugiat sem in, dapibus metus. Curabitur dapibus augue bibendum, dignissim nisi quis, sollicitudin quam. 
-          Integer dignissim nibh quam, id interdum odio cursus nec. Mauris facilisis purus nec felis tristique accumsan. 
-          Aliquam suscipit odio ut turpis dignissim, a eleifend eros bibendum. Mauris lacinia non massa eu molestie. 
-          Phasellus non ex eu ipsum vulputate varius.
+        <h4 class="text-orange-600 text-2xl font-bold">Om mig</h4>
+        <h2 class="text-3xl font-medium">Jeppe Rønnow</h2>
+        <p class="text-lg text-justify font-normal pt-2 text-neutral-300">
+            Hej, mit navn er Jeppe Rønnow! Jeg er for nyligt dimitteret fra HTX i Sønderborg med en passion for programmering. I min fritid finder du mig ofte fordybet i koder og projekter.
+            
+            Min ekspertise ligger især inden for Arduino, hvor jeg har opnået en stor forståelse for dets funktioner og muligheder. Jeg nyder at skabe spændende og innovative løsninger ved hjælp af Arduino. Derudover har jeg også en solid forståelse af programmeringssprog som Python og Java.
+            
+            Front-end development er et andet område, hvor jeg har opnået betydelig erfaring. Jeg har arbejdet med HTML, CSS og JavaScript for at skabe attraktive og brugervenlige grænseflader til forskellige webprojekter.
         </p>
       </div>
     </div>
@@ -65,72 +100,69 @@
 
   <div class="h-auto py-40" id="Projects">
     <div class="mx-72 my-10">
-      <h4 class="text-orange-600 text-2xl font-bold">PORTFOLIO</h4>
-      <h2 class="text-3xl font-medium">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
+      <h4 class="text-orange-600 text-2xl font-bold">Spændende projekter</h4>
+      <h2 class="text-2xl font-medium">Nedenstående præsenteres en række projekter, som jeg har fuldført i løbet af min studietid på HTX.</h2>
     </div>
     
-    <div class="grid grid-cols-2 p-10 bg-neutral-50 dark:bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl">
+    <div class="grid grid-cols-2 p-10 bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl space-x-8">
       <div class="flex flex-col items-center h-auto js-show-on-scroll">
-        <img src="img/images.jpg" class="h-96 rounded-2xl">
+        <img src="img/bejer.jpg" class="rounded-2xl">
       </div>
       <div class="js-show-on-scroll text-center">
-        <h2 class="text-3xl font-medium">Projekt 1</h2>
-        <p class="text-xl font-normal pt-4 text-neutral-600 dark:text-neutral-300">
-          Suspendisse suscipit massa et posuere vulputate. Etiam interdum luctus neque. 
-          Curabitur tellus ex, placerat ullamcorper est vitae, rhoncus pharetra nibh. 
-          Aliquam erat volutpat. Ut pretium orci nisl, et ultrices metus rhoncus a. 
-          Nam eu orci elementum, feugiat sem in, dapibus metus. Curabitur dapibus augue bibendum, dignissim nisi quis, sollicitudin quam. 
-          Integer dignissim nibh quam, id interdum odio cursus nec. Mauris facilisis purus nec felis tristique accumsan. 
-          Aliquam suscipit odio ut turpis dignissim, a eleifend eros bibendum. Mauris lacinia non massa eu molestie. 
+        <h2 class="text-3xl font-medium">Bajer Transport</h2>
+        <p class="text-xl font-normal pt-4 text-neutral-300 text-justify">
+          Dette er et afsluttende eksamensprojekt i teknikfaget Mekatronik på A niveau. Projektet går under navnet ”Bajer Transport”, og er hvad navnet hentyder til. Nemlig transport af øl. Projektet er lavet af Jeppe Rønnow og <a class="font-bold" href="https://github.com/Kris9elsen">Kristoffer Nielsen</a> som begge går i 3.X på Teknisk gymnasium på EUC syd Sønderborg.  Alt praktisk arbejde er blevet udført på EUC syd Sønderborgs faciliteter.
+          <br>
+          <br>
+          Robotten styres af en ATMega328p på et selv designet printplade.
         </p>
-        <a class="flex justify-center items-center" href="https://github.com/JeppeRonnow">
-          <p class="text-xl pr-5 font-bold">Code</p>
-          <img src="\img\github-mark.png" alt="Github Logo" class="w-10 h-10 mt-4 dark:hidden"/>
-          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-10 h-10 mt-4 hidden dark:flex"/>
+        <a class="flex justify-center items-center space-x-8 pt-5" href="https://github.com/Ronnow-og-Nielsens-Entreprenorfirma/Bajer-Transport-bot">
+          <img src="\img\ardu.png" alt="Github Logo" class="h-8 mt-4" title="Arduino"/>
+
+          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-10 h-10 mt-4 flex"/>
         </a>
       </div>
     </div>
 
-    <div class="grid grid-cols-2 p-10 bg-neutral-50 dark:bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl mt-20">
+    <div class="grid grid-cols-2 p-10 bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl mt-20 space-x-8">
       <div class="js-show-on-scroll text-center">
-        <h2 class="text-3xl font-medium">Projekt 2</h2>
-        <p class="text-xl font-normal pt-4 text-neutral-600 dark:text-neutral-300">
-          Suspendisse suscipit massa et posuere vulputate. Etiam interdum luctus neque. 
-          Curabitur tellus ex, placerat ullamcorper est vitae, rhoncus pharetra nibh. 
-          Aliquam erat volutpat. Ut pretium orci nisl, et ultrices metus rhoncus a. 
-          Nam eu orci elementum, feugiat sem in, dapibus metus. Curabitur dapibus augue bibendum, dignissim nisi quis, sollicitudin quam. 
-          Integer dignissim nibh quam, id interdum odio cursus nec. Mauris facilisis purus nec felis tristique accumsan. 
-          Aliquam suscipit odio ut turpis dignissim, a eleifend eros bibendum. Mauris lacinia non massa eu molestie. 
+        <h2 class="text-3xl font-medium">Kodehusker</h2>
+        <p class="text-xl font-normal pt-4 text-neutral-300 text-justify">
+          Som afsluttende eksamensprojekt i faget programmering på C niveau. Som navnet hentyder til blev der udviklet en simple kodehusker i Processing Java. 
+          
+          Processing Java er et programmeringssprog og udviklingsmiljø til oprettelse af interaktive visuelle applikationer og kunstværker. Det understøtter 2D og 3D grafik, lyd og video på tværs af forskellige platforme.
+          <br> <br>
+          Processing er også blevet brugt i andre projekter til at lave en simple app der kan forbindes med bluetooth til en Arduino.
         </p>
-        <a class="flex justify-center items-center" href="https://github.com/JeppeRonnow">
-          <p class="text-xl pr-5 font-bold">Code</p>
-          <img src="\img\github-mark.png" alt="Github Logo" class="w-10 h-10 mt-4 dark:hidden"/>
-          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-10 h-10 mt-4 hidden dark:flex"/>
+        <a class="flex justify-center items-center space-x-8 pt-5" href="https://github.com/Ronnow-og-Nielsens-Entreprenorfirma/Eksamensprojekt">
+          <img src="\img\Processing.png" alt="Github Logo" class="h-10 mt-4" title="Processing"/>
+
+          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-10 h-10 mt-4 flex"/>
         </a>
       </div>
       <div class="flex flex-col items-center h-auto js-show-on-scroll">
-        <img src="img/images.jpg" class="h-96 rounded-2xl">
+        <img src="img/kodehusker.png" class="rounded-2xl">
       </div>
     </div>
 
-    <div class="grid grid-cols-2 p-10 bg-neutral-50 dark:bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl mt-20">
+    <div class="grid grid-cols-2 p-10 bg-neutral-800 mx-72 rounded-3xl shadow-neutral-950 shadow-2xl mt-20">
       <div class="flex flex-col items-center h-auto js-show-on-scroll">
-        <img src="img/images.jpg" class="h-96 rounded-2xl">
+        <img src="img/coding.png" class="rounded-2xl">
       </div>
       <div class="js-show-on-scroll text-center">
-        <h2 class="text-3xl font-medium">Projekt 3</h2>
-        <p class="text-xl font-normal pt-4 text-neutral-600 dark:text-neutral-300">
-          Suspendisse suscipit massa et posuere vulputate. Etiam interdum luctus neque. 
-          Curabitur tellus ex, placerat ullamcorper est vitae, rhoncus pharetra nibh. 
-          Aliquam erat volutpat. Ut pretium orci nisl, et ultrices metus rhoncus a. 
-          Nam eu orci elementum, feugiat sem in, dapibus metus. Curabitur dapibus augue bibendum, dignissim nisi quis, sollicitudin quam. 
-          Integer dignissim nibh quam, id interdum odio cursus nec. Mauris facilisis purus nec felis tristique accumsan. 
-          Aliquam suscipit odio ut turpis dignissim, a eleifend eros bibendum. Mauris lacinia non massa eu molestie. 
+        <h2 class="text-3xl font-medium">JeppeRonnow.github.io</h2>
+        <p class="text-xl font-normal pt-4 text-neutral-300 text-justify">
+          Hjemmesiden vi er på nu er et simpelt eksempel hvad man kan bygge med Tailwind CSS, som siden er bygget med, og efterfølgene hostet på Github Pages.
+          <br>
+          <br>
+          På denne hjemmeside er der fokuseret på at opbygge en hjemmeside ved hjælp af Tailwind CSS, et populært CSS-rammeværk. Tailwind CSS er kendt for sin enkle tilgang til styling og dets fleksibilitet. Projektet har til formål at demonstrere, hvordan man kan oprette en brugervenlig hjemmeside ved hjælp af Tailwind CSS's komponentbaserede tilgang.
         </p>
-        <a class="flex justify-center items-center" href="https://github.com/JeppeRonnow">
-          <p class="text-xl pr-5 font-bold">Code</p>
-          <img src="\img\github-mark.png" alt="Github Logo" class="w-10 h-10 mt-4 dark:hidden"/>
-          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-10 h-10 mt-4 hidden dark:flex"/>
+        <a class="flex justify-center items-center space-x-8 pt-5" href="https://github.com/JeppeRonnow/JeppeRonnow.github.io">
+          <svg class="h-12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 17.56 4.07-1.13.55-6.1H9.38L9.2 8.3h7.6l.2-1.99H7l.56 6.01h6.89l-.23 2.58-2.22.6-2.22-.6-.14-1.66h-2l.29 3.19L12 17.56M4.07 3h15.86L18.5 19.2 12 21l-6.5-1.8L4.07 3z" fill="#ffffff"/></svg>
+          <svg class="h-12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 3-.65 3.34h13.59L17.5 8.5H3.92l-.66 3.33h13.59l-.76 3.81-5.48 1.81-4.75-1.81.33-1.64H2.85l-.79 4 7.85 3 9.05-3 1.2-6.03.24-1.21L21.94 3H5z" fill="#ffffff"/></svg>
+          <svg class="h-12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55 1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73 1.6 0 2.8-.83 2.8-2.36 0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02 0-.41.31-.73.81-.73.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33-1.51 0-2.48.96-2.48 2.23 0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13 0 .48-.45.83-1.15.83-.83 0-1.31-.43-1.67-1.03l-1.38.8z" fill="#ffffff"/></svg>
+          <svg class="h-12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 9.8c.733-2.934 2.567-4.4 5.5-4.4 4.4 0 4.951 3.3 7.151 3.85 1.467.367 2.75-.184 3.85-1.65-.732 2.933-2.566 4.4-5.5 4.4-4.4 0-4.95-3.3-7.15-3.85-1.468-.368-2.751.183-3.852 1.65zM.998 16.4c.733-2.933 2.567-4.4 5.5-4.4 4.401 0 4.95 3.3 7.152 3.85 1.466.368 2.75-.183 3.85-1.65-.734 2.934-2.567 4.4-5.5 4.4-4.401 0-4.951-3.3-7.152-3.85-1.466-.367-2.75.184-3.85 1.65z" style="fill:#ffffff"/></svg>
+          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-10 h-10 flex"/>
         </a>
       </div>
     </div>
@@ -155,14 +187,14 @@
   </div>
   -->
 
-  <div class="h-auto py-40 bg-neutral-100 dark:bg-neutral-850" id="Contact">
+  <div class="h-auto py-40 bg-neutral-850" id="Contact">
     <div class="mx-72 my-10">
-      <h4 class="text-orange-600 text-2xl font-bold">Contact</h4>
-      <h2 class="text-3xl font-medium">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet 👇</h2>
+      <h4 class="text-orange-600 text-2xl font-bold">Kontakt</h4>
+      <h2 class="text-3xl font-medium">Kan kontaktes og findes her 👇</h2>
 
       <div class="grid grid-cols-3 mt-10 h-auto">
         <div class="flex items-center">
-          <div class="h-20 w-20 rounded-full bg-white dark:bg-neutral-800 flex items-center shadow-neutral-600 dark:shadow-neutral-950 shadow-md">
+          <div class="h-20 w-20 rounded-full bg-neutral-800 flex items-center shadow-neutral-950 shadow-md">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
               <path d="M19.5 22.5a3 3 0 003-3v-8.174l-6.879 4.022 3.485 1.876a.75.75 0 01-.712 1.321l-5.683-3.06a1.5 1.5 0 00-1.422 0l-5.683 3.06a.75.75 0 01-.712-1.32l3.485-1.877L1.5 11.326V19.5a3 3 0 003 3h15z" />
               <path d="M1.5 9.589v-.745a3 3 0 011.578-2.641l7.5-4.039a3 3 0 012.844 0l7.5 4.039A3 3 0 0122.5 8.844v.745l-8.426 4.926-.652-.35a3 3 0 00-2.844 0l-.652.35L1.5 9.59z" />
@@ -174,14 +206,14 @@
           </div>
         </div>
         <div class="flex items-center">
-          <div class="h-20 w-20 rounded-full bg-white dark:bg-neutral-800 flex items-center shadow-neutral-600 dark:shadow-neutral-950 shadow-md">
+          <div class="h-20 w-20 rounded-full bg-neutral-800 flex items-center shadow-neutral-950 shadow-md">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
               <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
             </svg>            
           </div>
           <div class="ml-2">
-            <h2 class="text-orange-600 text-xl font-bold">Location</h2>
-            <span>Denmark</span>
+            <h2 class="text-orange-600 text-xl font-bold">Placering</h2>
+            <span>Sønderborg, Denmark</span>
           </div>
         </div>
       </div> 
@@ -190,13 +222,12 @@
   
   <div class="h-40" id="end">
     <div class="grid grid-cols-2 p-10 mt-16 mx-72">
-      <div class="dark:text-neutral-700 text-neutral-600 text-xl font-bold my-auto">
-        Copyright © 2023. All rights are reserved
+      <div class="text-neutral-700 text-xl font-bold my-auto">
+        Copyright © 2023.
       </div>
       <div class="flex justify-end opacity-50">
         <a class="" href="https://github.com/JeppeRonnow">
-          <img src="\img\github-mark.png" alt="Github Logo" class="w-8 h-8 dark:hidden"/>
-          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-8 h-8 hidden dark:flex"/>
+          <img src="\img\github-mark-white.png" alt="Github Logo" class="w-8 h-8 flex"/>
         </a>
       </div>
     </div>
