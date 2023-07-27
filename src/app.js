@@ -18,3 +18,7 @@ const callback = function (entries) {
     observer.observe(target);
   });
 
+function toggleNavbar() {
+  const navbar = document.getElementById("navbar-default");
+  navbar.classList.toggle("hidden");
+}
